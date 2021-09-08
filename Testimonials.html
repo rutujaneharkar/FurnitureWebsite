@@ -1,0 +1,228 @@
+<html>
+    <head>
+         <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+        <title>Testimonials</title>
+    </head>
+    <body>
+        <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+    -->
+
+        <!-- MAIN (Center website) -->
+        <div class="main">
+        
+        
+        <h2>PORTFOLIO</h2>
+        
+        <div id="myBtnContainer">
+          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+          <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+          <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+          <button class="btn" onclick="filterSelection('people')"> People</button>
+        </div>
+        
+        <!-- Portfolio Gallery Grid -->
+        <div class="row">
+          <div class="column nature">
+            <div class="content">
+              <img src="Kak1.jpg" alt="Furniture" style="width: 200px; height: 200px;" >
+              <h4>Mountains</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column nature">
+            <div class="content">
+            <img src="Kak2.jpg" alt="Furniture" style="width: 200px; height: 200px;">
+              <h4>Lights</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column nature">
+            <div class="content">
+            <img src="Kak3.jpg" alt="Furniture" style="width: 200px; height: 200px;" >
+              <h4>Forest</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="row">
+          <div class="column cars">
+            <div class="content">
+              <img src="Kak4.jpg" alt="Furniture" style="width: 200px; height: 200px;" >
+              <h4>Retro</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column cars">
+            <div class="content">
+            <img src="Kak5.jpg" alt="Furniture" style="width: 200px; height: 200px;">
+              <h4>Fast</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column cars">
+            <div class="content">
+            <img src="Kak6.jpg" alt="Furniture" style="width: 200px; height: 200px;">
+              <h4>Classic</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="row">
+          <div class="column people">
+            <div class="content">
+              <img src="Kak7.jpg" alt="Furniture" style="width: 200px; height: 200px;">
+              <h4>Girl</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="Kak8.jpg" alt="Furniture" style="width: 200px; height: 200px;">
+              <h4>Man</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column people">
+            <div class="content">
+            <img src="Kak9.jpg" alt="Furniture" style="width: 200px; height: 200px;">
+              <h4>Woman</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+        <!-- END GRID -->
+        </div>
+        
+        <!-- END MAIN -->
+        </div>
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("column");
+              if (c == "all") c = "";
+              for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+              }
+            }
+            
+            function w3AddClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+              }
+            }
+            
+            function w3RemoveClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+            
+            
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("myBtnContainer");
+            var btns = btnContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+            </script>
+            <div class="main1">
+
+                <h1>MYLOGO.COM</h1>
+                <hr>
+                
+                <h2>PORTFOLIO</h2>
+                <p>Resize the browser window to see the responsive effect.</p>
+                
+                <!-- Portfolio Gallery Grid -->
+                <div class="row">
+                  <div class="column">
+                    <div class="content">
+                      <img src="Kak9.jpg" alt="Furniture" style="width: 200px; height: 200px;">
+                      <h3>My Work</h3>
+                      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                    <img src="/w3images/lights.jpg" alt="Furniture" style="width: 200px; height: 200px;">
+                      <h3>My Work</h3>
+                      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                    <img src="/w3images/nature.jpg" alt="Furniture" style="width: 200px; height: 200px;">
+                      <h3>My Work</h3>
+                      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                    </div>
+                  </div>
+                  <div class="column">
+                    <div class="content">
+                    <img src="/w3images/mountains.jpg" alt="Furniture" style="width: 200px; height: 200px;">
+                      <h3>My Work</h3>
+                      <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                    </div>
+                  </div>
+                <!-- END GRID -->
+                </div>
+                
+                <div class="content">
+                  <img src="/w3images/p3.jpg" alt="Furniture" style="width: 200px; height: 200px;">
+                  <h3>Some Other Work</h3>
+                  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                  <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+                </div>
+                
+                <!-- END MAIN -->
+                </div>
+                
+<!--old table-->
+            
+                <div class="goals">
+                    <div class="clearfix">
+                        <img class="img" src="goal.png" alt="goal" width="300" height="250">
+                       <h6><b class="bold">Uniquness</b><br>
+                           Our unique business model<br>
+                            and mind-blowing ideas</h6>
+                            <img class="img" src="Goal1.jpg" alt="goal" width="340" height="250">
+                       <h6><b class="bold">Flexibilty</b><br>
+                           Friendly business environment<br>
+                           and flexible services</h6>
+                           <img class="img" src="Pioneering.png" alt="goal" width="300" height="250">
+                        <h6><b class="bold">Pioneering</b><br>
+                            Generating numerous creative ideas and<br>
+                             implementing them at your service
+            
+                        </h6>     
+                      </div>
+                      </div>
+                
+        
+    </body>    
+</html>

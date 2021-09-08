@@ -1,0 +1,17 @@
+Week 1
+Day 26- Intro to web development domain and HTML
+Day 27- Html tags 
+Day 28- HTML-5 introduction and created dummy website using HTML
+Day 29- Worked on dummy website added various features 
+Day 30- Basic CSS tags
+Day 31- GitHub
+1 Aug- GitHub
+2 Aug- Worked on dummy website used CSS
+3 Aug- ---""----
+4 Aug- Bootstrap introduction
+5 Aug- Bootstrap session basic implementation on dummy website
+6 Aug- Bootstrap animations features and reviewed websites
+8 Aug- Follow ups of the dummy websites and guidance by the mentors 
+9 Aug- Designed website layout 
+10 Aug- Follow up of the design of the website layout 
+11 Aug- Changes in the website home page layout and collection images and information of the website  
