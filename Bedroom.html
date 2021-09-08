@@ -1,0 +1,386 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+     <meta charset="utf-8">
+    <link rel="stylesheet" href="bootproject.css"></link>
+    <link rel="stylesheet" href="furniture.css"></link>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+   
+    </head>
+    <title>Bedroom</title>
+ <body> 
+    <div class="header">
+        <div class="topnav" id="myTopnav">
+          <img src="kakade1.PNG" style="width:13%" ></img>
+        
+        
+          <a href="Helpdesk.html">Helpdesk</a>
+  <a href="AboutUs.html">About Us</a>
+  <a href="Portfolio.html">Portfolio</a>
+  <a href="DecorSection.html">Decor</a>
+  <div class="dropdown">
+    <button class="dropbtn">Furniture
+
+    </button>
+    <div class="dropdown-content">
+      <a href="furniture.html">Living Room</a>
+      <a href="Bedroom.html">Bed Room</a>
+      <a href="kitchen.html">Kitchen</a>
+     
+    </div>
+  </div> 
+  <a href="Index.html">Home</a>
+          <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div></div>
+        <div class="row5">
+          <div class="side">
+            <h3>On this Page:</h3>
+            <h3><b>Bed Room</b> </h3>
+            <p><a href="#">Beds</a></p>
+            <p><a href="#">Cupboards</a></p>
+            <p><a href="#">Wallpapers</a></p>
+            
+            <h3>Summary</h3>
+           
+            
+          </div>
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+        </script>
+        <div class="main1">
+        <div class="body3">
+          <div class="slideshow-container">
+                      <div class="mySlides fade">
+                         <img src="Bed1.jpg" " style="width:100%;" height="600">
+                         
+                      </div>
+                      <div class="mySlides fade">
+                         <img src="cup5.jpeg" " style="width:100%;" height="600">
+                         <div class="text"></div>
+                      </div>
+                      <div class="mySlides fade">
+                         <img src="bedr3.jpeg" style="width:100%" height="600">
+                         <div class="text"></div>
+                      </div>
+                      <div class="mySlides fade">
+                         <img src="Bedr2.jpeg" " style="width:100%;" height="600">
+                         <div class="text"></div>
+                      </div>
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                   </div>
+                   <br>
+                   <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span>
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                      <span class="dot" onclick="currentSlide(4)"></span> 
+                   </div>
+                   <script>
+                      var slideIndex = 1;
+                      showSlides(slideIndex);
+                      
+                      function plusSlides(n) {
+                        showSlides(slideIndex += n);
+                      }
+                      
+                      function currentSlide(n) {
+                        showSlides(slideIndex = n);
+                      }
+                      
+                      function showSlides(n) {
+                        var i;
+                        var slides = document.getElementsByClassName("mySlides");
+                        var dots = document.getElementsByClassName("dot");
+                        if (n > slides.length) {slideIndex = 1}    
+                        if (n < 1) {slideIndex = slides.length}
+                        for (i = 0; i < slides.length; i++) {
+                            slides[i].style.display = "none";  
+                        }
+                        for (i = 0; i < dots.length; i++) {
+                            dots[i].className = dots[i].className.replace(" active", "");
+                        }
+                        slides[slideIndex-1].style.display = "block";  
+                        dots[slideIndex-1].className += " active";
+                      } </script>
+</div>
+</div>
+</div>
+<h2><center>Bed Room Collection</center></h2>
+<div class="column21"></div>
+<div class="row">
+  <div class="column22" style="background-color:white;">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="bedr6.jpeg"  style="width:100%;height:280px;">
+        </div>
+        <div class="flip-card-back">
+          <h1 style="padding:70px">Beds</h1> 
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column22" style="background-color:white;">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="cup6.jpeg"  style="width:100%;height:280px;">
+        </div>
+        <div class="flip-card-back">
+          <h1  style="padding:70px">Cupboards</h1> 
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column22" style="background-color:white;">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="Wall.jpg"  style="width:100%;height:280px;">
+        </div>
+        <div class="flip-card-back">
+          <h1  style="padding:70px">Wallpapers</h1> 
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+  </div><div class="column21"></div>
+</div>
+<br>
+<hr/>
+
+
+
+ 
+
+  <br>
+  <!--Sofa  -->
+  <h1 style="padding: 0px 0px 0px 160px;">Bed Collection</h1>
+  <div class="main1">
+    <div class="row51">
+      <div class="column55">
+        <div class="card52">
+     </div>
+    
+      </div>
+    
+      <div class="column56">
+        <div class="card51">
+         
+          <img src="bedr7.jpeg" alt="Mountains" style="width:100%; height:300px;">
+       
+        </div>
+      </div>
+      
+      <div class="column56">
+        <div class="card51">
+          <img src="bedr4.jpeg" alt="Mountains" style="width:100%; height:300px;"> 
+        
+        </div>
+      </div>
+      
+      <div class="column56">
+        <div class="card51">
+          <img src="bedr1.jpeg" alt="Mountains" style="width:100% ;height:300px;">
+           
+        </div>
+      </div>
+      <div class="column55">
+        <div class="card52">
+      </div>
+      </div>
+      
+    
+    </div>
+  </div>
+    <br>
+    <div class="row51">
+      <div class="column52">
+        <div class="card52">
+     </div>
+    
+      </div>
+    
+      <div class="column51">
+        <div class="card51">
+         
+          <img src="bedr5.jpeg" alt="Mountains" style="width:100% ;height:300px;">
+        
+        </div>
+      </div>
+      
+      <div class="column51">
+        <div class="card51">
+          <img src="bedr2.jpeg" alt="Mountains" style="width:100% ;height:300px;"> 
+        
+        </div>
+      </div>
+      
+      <div class="column51">
+        <div class="card51">
+          <img src="bed2.jpg" alt="Mountains" style="width:100%; height:300px;">
+          
+        </div>
+      </div>
+      <div class="column52">
+        <div class="card52">
+      </div>
+      </div>
+  </div>    
+  <br>
+  <!--Teapoy  -->
+  <h1 style="padding: 0px 0px 0px 160px;">Cupboards Collection</h1>
+  <div class="main1">
+    <div class="row51">
+      <div class="column55">
+        <div class="card52">
+     </div>
+    
+      </div>
+    
+      <div class="column56">
+        <div class="card51">
+         
+          <img src="cup1.jpeg" alt="Mountains" style="width:100%; height:300px;">
+       
+        </div>
+      </div>
+      
+      <div class="column56">
+        <div class="card51">
+          <img src="cup2.jpeg" alt="Mountains" style="width:100%; height:300px;"> 
+        
+        </div>
+      </div>
+      
+      <div class="column56">
+        <div class="card51">
+          <img src="cup3.jpeg" alt="Mountains" style="width:100% ;height:300px;">
+           
+        </div>
+      </div>
+      <div class="column55">
+        <div class="card52">
+      </div>
+      </div>
+      
+    
+    </div>
+  </div>
+    <br>
+    <div class="row51">
+      <div class="column52">
+        <div class="card52">
+     </div>
+    
+      </div>
+    
+      <div class="column51">
+        <div class="card51">
+         
+          <img src="cup4.jpeg" alt="Mountains" style="width:100% ;height:300px;">
+        
+        </div>
+      </div>
+      
+      <div class="column51">
+        <div class="card51">
+          <img src="cup7.jpeg" alt="Mountains" style="width:100% ;height:300px;"> 
+        
+        </div>
+      </div>
+      
+      <div class="column51">
+        <div class="card51">
+          <img src="copboards.jpg" alt="Mountains" style="width:100%; height:300px;">
+          
+        </div>
+      </div>
+      <div class="column52">
+        <div class="card52">
+      </div>
+      </div>
+  </div>    
+  <br><br>
+  <center><a href="index.html" class="button121"><i class="fa fa-fw fa-home"></i> Homepage</a></center>
+  <br>
+  <br>
+  
+  <footer class="container-fluid bg-4 text-center" >
+
+    <div class="content">
+      <div class="left box">
+        <div class="upper">
+          <div class="topic">About us</div>
+          <p>We at <b>"Kakade-Furniture"</b> provides the strength of 
+   excellence in quality, style, selection and quality customer service.</p>
+        </div>
+        <div class="lower">
+  <div class="topic">Contact us</div>
+ <div class="phone">
+            <a href="#"><i class="fa fa-map-marker"></i>Katraj-MumbaiPune Bypass Rd,
+            Opposite Of Poddar Inetrnational School,Ambegaon BK,Behind Saurabh,Pune-411046</a>
+          </div>
+          <div class="phone">
+            <a href="#"><i class="fas fa-phone-volume"></i>Phone: +91 6384471476</a>
+          </div>
+          <div class="email">
+            <a href="#"><i class="fas fa-envelope"></i>Swarajpk2011@gmail.com</a>
+          </div>
+ 
+ </div>
+  </div>
+ 
+      <div class="middle box">
+  <div class="topic">Our Services</div>
+ 
+        <div><a href="#">Interior Design</a></div>
+        <div><a href="#">Furnishing</a></div>
+        <div><a href="DecorSection.html">Decor</a></div>
+        <div><a href="Portfolio.html">Projects</a></div>
+        <div><a href="AboutUS.html">About Us</a></div>
+     
+      </div>
+      <div class="right box">
+        <div class="topic">Schedule Your Appointment To Visit Us</div>
+        <form action="#">
+          <input type="text" placeholder="Enter email address">
+        <center><p><center>OR</p></center>
+         <input type="text" placeholder="EnterPhone Number">
+          <input type="submit" name="" value="Send">
+          <div class="media-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fas fa-phone-volume"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+            <a href="#"><i class="fa fa-share-alt"></i></a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="bottom">
+      <p>Copyright © 2020 <a href="#">KakadeFurniture</a> All rights reserved</p>
+    </div>
+  </footer>
+  
+ 
+ </footer>
+ </body>
+ </html>
+ </body>   
+</html>
