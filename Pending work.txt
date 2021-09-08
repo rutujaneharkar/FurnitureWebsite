@@ -1,0 +1,11 @@
+Pending Tasks-
+1) Filling daily sheets FORMAT A INPLANT TRAINING and weekly sheet FORMAT B INPLANT TRAINING
+- FORMAT A daily sheet 2 weeks filled 3 weeks pending.
+2) Filling excel sheets of training.
+3) Furniture section completion.
+4) Navbar and footer adding to the pages designed by me:
+-About Us Section.
+-Portfolio and Testimonial Section.
+-Helpdesk Section.
+-Decor Section.
+5) Hosting.
