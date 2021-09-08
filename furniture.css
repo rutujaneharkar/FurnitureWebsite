@@ -1,0 +1,222 @@
+
+
+* {
+  box-sizing: border-box;
+}
+.button121 {
+  background-color: DarkCyan;
+  border: none;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+/* Create four equal columns that floats next to each other */
+.column21 {
+  float: left;
+  width: 11%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.column22 {
+  float: left;
+  width: 26%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+}
+@media screen and (max-width: 600px) {
+  .column21 {
+    width: 100%;
+  }
+  .column22 {
+    width: 100%;
+  }
+}
+.flip-card {
+  background-color: transparent;
+  width: auto;
+  height: 280px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color:#008080;
+  color: white;
+  transform: rotateY(180deg);
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column31 {
+  float: left;
+  width: 12%;
+ 
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+.column32 {
+  float: left;
+  width: 25.3%;
+ 
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column31 {
+    width: 100%;
+    display: block;
+  }
+  .column32 {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card31 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container31 {
+  padding: 0 16px;
+}
+
+.container31::after, .row31::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title31 {
+  color: grey;
+}
+
+
+
+.column51 {
+  float: left;
+  width: 26%;
+  padding: 0 15px;
+}
+.column52 {
+  float: left;
+  width: 13.1%;
+  padding: 0 15px;
+}
+.column53 {
+  float: left;
+  width: 26%;
+  padding: 0 15px;
+}
+.column54 {
+  float: left;
+  width: 0.1%;
+  padding: 0 15px;
+}
+.column55 {
+  float: left;
+  width: 13%;
+  padding: 0 15spx;
+}
+.column56 {
+  float: left;
+  width: 26%;
+  padding: 0 15px;
+}
+
+.row51 {margin: 0 -5px;}
+
+
+
+.row51:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column51 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .column52 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .column53 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .column54 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .column55 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+  .column56 {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+.card51 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+  
+}
+.card52 {
+
+  padding: 5px;
+  text-align: center;
+  background-color: white;
+}
