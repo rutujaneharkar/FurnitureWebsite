@@ -1,0 +1,386 @@
+<html>
+<head>
+  <title>
+    Portfolio
+  </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+ <meta charset="utf-8">
+<link rel="stylesheet" href="bootproject.css">
+
+<style>
+  .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  font-size: xx-large; 
+  color: darksalmon;
+}
+.row {
+  
+  display: flex;
+
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.head{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: lemonchiffon;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.img{
+  float: left;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.top{
+  padding-top: 200px;
+  padding-left: 10px;
+}
+
+
+/* Create three unequal columns that floats next to each other */
+.column1 {
+  float: left;
+  padding: 10px;
+  height: 300px;
+}
+
+.left, .right {
+
+  width: 10%;
+}
+
+.middle {
+  width: 27%;
+}
+
+/* Clear floats after the columns */
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+</style>
+
+</head>
+<body>
+
+
+<div class="header">
+<div class="topnav" id="myTopnav">
+ <img src="kakade1.png" style="width:13%" ></img> 
+  <a href="Helpdesk.html">Helpdesk</a>
+  <a href="AboutUs.html">About Us</a>
+  <a href="Portfolio.html">Portfolio</a>
+  <a href="DecorSection.html">Decor</a>
+  <div class="dropdown">
+    <button class="dropbtn">Furniture
+
+    </button>
+    <div class="dropdown-content">
+      <a href="furniture.html">Living Room</a>
+      <a href="Bedroom.html">Bed Room</a>
+      <a href="kitchen.html">Kitchen</a>
+     
+    </div>
+  </div> 
+  <a href="html.html">Home</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div></div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+
+</script>
+
+
+<div class="body2">
+  
+  <div class="card1">
+    <img src="white-wall-empty-room-with-plants-floor-3d-rendering.jpg" alt="customer-experience-concept-best-excellent-services-rating-satisfaction" width="100%" height="680" style="padding: left 20px; ;">
+      <div class="centered" ><b><blockquote><span class="quotetationMarks">&ldquo;</span >Just ordinary is not our thing!!</b> <span class="quotetationMarks">&rdquo;</span></blockquote>
+        </div>
+  </div>
+  </div>
+  <br>
+
+  <div class="head">
+    <h2><b>Let's have a glimpse at our work :)</b></h2></div>
+    <br>
+  <!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="Kak16.jpg" style="width: 350px; height: 300px;">
+    <img src="Kak2.jpg" style="width: 350px; height: 300px;">
+    <img src="Kak3.jpg" style="width: 350px; height: 300px;">
+    <img src="Kak4.jpg" style="width: 350px; height: 300px;">
+    <img src="Kak20.jpg" style="width: 350px; height: 300px;">
+  </div>
+  <div class="column">
+    <img src="Kak5.jpg" style="width: 350px; height: 300px;">
+    <img src="Kak6.jpg" style="width: 350px; height: 300px;">
+    <img src="Kak7.jpg" style="width: 350px; height: 300px;">
+    <img src="Kak8.jpg" style="width: 350px; height: 300px;">
+    <img src="Kak19.jpg" style="width: 350px; height: 300px;">
+  </div>  
+  <div class="column">
+    <img src="Kak9.jpg" style="width: 350px; height: 350px;">
+    <img src="Kak10.jpg" style="width: 350px; height: 350px;">
+    <img src="Kak15.jpg" style="width: 350px; height: 350px;">
+    <img src="Kak17.jpg" style="width: 350px; height: 350px;">
+
+  </div>
+  <div class="column">
+    <img src="Kak13.jpg" style="width: 350px; height: 400px;">
+    <img src="Kak12.jpg" style="width: 350px; height: 400px;">
+    <img src="Kak1.jpg" style="width: 350px; height: 400px;">
+    <img src="Kak18.jpg" style="width: 350px; height: 400px;">
+  </div>
+</div>
+ 
+<div class="head">
+  <h2>
+    <b>
+  Perfection at ease for your comfort :)
+  </b>
+  </h2>
+</div>
+
+  <div class="clearfix">
+    <img class="img" src="review-evaluation-satisfaction-customer-service-feedback-sign-icon.jpg" alt="review-evaluation-satisfaction-customer-service-feedback-sign-icon" style="width: 870px; height: 550px;padding-left: 5px;">  
+   <div class="top" style="font-family: Georgia, 'Times New Roman', Times, serif; color: slategray;"><h4><b>Why is our enterprise so renowned??<br> 
+     Come and review the testimonials of our indulgent customers!!</h4></b> 
+  </div>
+  </div>
+  <br>
+  <br>
+
+  <div class="row1">
+    <div class="column1 left" style="background-color:white;">
+      
+    </div>
+  <div class="row1">
+    <div class="column1 middle">
+      <img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png" alt="Quotes" style="width: 50px; height: 50px;">
+      <br>
+      <br>
+      <p>
+        Excellent services and affordable prices available.<br> 
+        They provide very comfortable products and the staff here is also Friendly. <br>
+        It was a great experience
+      </p>
+      <br>
+      <hr>
+      <div class="cust-det" style="padding-left: 2px;">
+        
+          <b>Rutuja Neharkar  <br>
+          Software Engineer</b>
+      </div>
+    </div>
+    <div class="column1 middle">
+      <img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png" alt="Quotes" style="width: 50px; height: 50px;">
+      <br>
+      <br>
+      <p>
+        Kakade Furnitures is a really wonderful enterprise when it come to decorating your home. <br>They have really good services. 
+        I would prefer people to surely visit their enterprise!!
+      </p>
+      <br>
+      <hr>
+      <div class="cust-det">
+          <b>Shraddha Mohalkar<br>
+          Dermatologist</b>
+      </div>
+    </div>
+    <div class="column1 middle">
+      <img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png" alt="Quotes" style="width: 50px; height: 50px;">
+      <br>
+      <br>
+      <p>
+        This organization provides the perfect service every customer would want, also their products are feasible <br>when anyone would think of furnishing their homes!! 
+        People should surely visit them :)
+      </p>
+      <br>
+      <hr>
+      <div class="cust-det">
+          <b>Gayatri Satpute<br>
+          Entrepreneur</b>
+      </div>
+    </div>
+    </div>
+    <br>
+    <br>
+
+    <div class="row1">
+      <div class="column1 left" style="background-color:white;">
+        
+      </div>
+    <div class="row1">
+      <div class="column1 middle">
+        <img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png" alt="Quotes" style="width: 50px; height: 50px;">
+        <br>
+        <br>
+        <p>
+          Kakade Furnitures provide really comfy <br>and relaxing furniture products. <br>Extra-ordinary designs and <br>reasonable rates are available here.<br>Everyone should give a visit!!
+        </p>
+        </p>
+        <br>
+        <hr>
+        <div class="cust-det" style="padding-left: 2px;">
+            <b>Riya Kshirsagar<br>
+            Fashion Designer</b>
+        </div>
+      </div>
+      <div class="column1 middle">
+        <img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png" alt="Quotes" style="width: 50px; height: 50px;">
+        <br>
+        <br>
+        <p>
+          Here we got all the necessary furniture which <br>we were looking for since long.<br> 
+          They provide really efficient services and <br>cosy furnishing products :)<br>Surely visit!!
+        </p>
+        <br>
+        <hr>
+        <div class="cust-det">
+          
+            <b>Aditya Pawar<br>
+            Software Engineer</b>
+        </div>
+      </div>
+      <div class="column1 middle">
+        <img src="https://img.icons8.com/ultraviolet/40/000000/quote-left.png" alt="Quotes" style="width: 50px; height: 50px;">
+        <br>
+        <br>
+        <p>
+          Furnishing the home is a very important and mandatory factor for all these days.<br> 
+          It was made easier and elegant because of Kakade Furnitures.<br> Great service:)
+        </p>
+        <br>
+        <hr>
+        <div class="cust-det">
+          
+          <b>Neel Joshi<br>
+          Dentist</b>
+        </div>
+      </div>
+      </div>
+      <br>
+      <br>
+
+
+</div>
+
+
+<footer class="container-fluid bg-4 text-center" >
+
+   <div class="content">
+     <div class="left box">
+       <div class="upper">
+         <div class="topic">About us</div>
+         <p>We at <b>"Kakade-Furniture"</b> provides the strength of 
+  excellence in quality, style, selection and quality customer service.</p>
+       </div>
+       <div class="lower">
+ <div class="topic">Contact us</div>
+<div class="phone">
+           <a href="#"><i class="fa fa-map-marker"></i>Katraj-MumbaiPune Bypass Rd,
+           Opposite Of Poddar Inetrnational School,Ambegaon BK,Behind Saurabh,Pune-411046</a>
+         </div>
+         <div class="phone">
+           <a href="#"><i class="fas fa-phone-volume"></i>Phone: +91 6384471476</a>
+         </div>
+         <div class="email">
+           <a href="#"><i class="fas fa-envelope"></i>Swarajpk2011@gmail.com</a>
+         </div>
+
+</div>
+ </div>
+
+     <div class="middle box">
+ <div class="topic">Our Services</div>
+
+       <div><a href="#">Interior Design</a></div>
+       <div><a href="#">Furnishing</a></div>
+       <div><a href="DecorSection.html">Decor</a></div>
+       <div><a href="Portfolio.html">Projects</a></div>
+       <div><a href="AboutUS.html">About Us</a></div>
+     
+     </div>
+     <div class="right box">
+       <div class="topic">Schedule Your Appointment To Visit Us</div>
+       <form action="#">
+         <input type="text" placeholder="Enter email address">
+<center><p><center>OR</p></center>
+        <input type="text" placeholder="EnterPhone Number">
+         <input type="submit" name="" value="Send">
+         <div class="media-icons">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+           <a href="#"><i class="fab fa-instagram"></i></a>
+           <a href="#"><i class="fas fa-phone-volume"></i></a>
+           <a href="#"><i class="fas fa-envelope"></i></a>
+           <a href="#"><i class="fa fa-share-alt"></i></a>
+         </div>
+       </form>
+     </div>
+   </div>
+   <div class="bottom">
+     <p>Copyright ©️ 2020 <a href="#">KakadeFurniture</a> All rights reserved</p>
+   </div>
+ </footer>
+
+  
+  
+</body>
+</html>
