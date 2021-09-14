@@ -442,6 +442,12 @@ background-color: lightgrey;}
   padding: 10px;
   height: 500px; 
 }
+.column15 {
+  float: left;
+  width: 5%;
+  padding: 10px;
+  height: 500px; 
+}
 .row11:after {
   content: "";
   display: table;
@@ -452,6 +458,17 @@ background-color: lightgrey;}
   .column11 {
     width: 100%;
   }
+  .column13 {
+      width: 100%;
+    }
+    .column12 {
+      width: 5px;
+      height: 21%;
+    }
+    .column15 {
+      width: 5px;
+      height: 21%;
+    }
 }
 
 .font1 {
